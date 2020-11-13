@@ -1,76 +1,88 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <title>Mundo Intergeneracional</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html lang="es" dir="ltr">
+<head>
+  <title>Mundo Intergeneracional</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+  <!-- W3 -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif">
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div id="holi" class="container-fluid p-2 text-black text-center">
-      <h1>Somos Intergeneracional</h1>
+<!-- WARNING:
+  <nav class="navbar navbar-expand-sm navbar-light sticky-top sticky-offset" id="holi">
+    <span class="navbar-brand mb-0 h1">Somos Intergeneracional</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+  -->
 
-    <div id="navbar" class="sticky-top sticky-offset">
-      <a class="active" href="index.html">Inicio</a>
-    </div>
+  <div class="topnav sticky-top sticky-offset" id="myTopnav">
+    <a href="index.html" class="active">Inicio</a>
+    <a href="formal.html">Cultura</a>
+    <a href="informal.html">Capacitación</a>
+    <a href="mentoria.html">Mentorías</a>
+    <a href="convivencia.html">Encuentros Intergeneracionales</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
 
-    <div id="galeria" class="container" style="margin-top: 40px">
-      <div class="row">
-        <div class="col-6">
-          <a href="convivencia.html">
-                <img class="img-fluid" src="imagenes/img2.jpg"  alt="Acompañamiento">
-                <div id="pie" class="texto">
-                  <h4 style="padding-left:5%">Convivencia</h4>
-                  <p>Conoce personas de otras generaciones compartiendo tus experiencias, intereses entre otros temas y leyendo lo que ellos tienen por contar. </p>
-                </div>
-              </a>
-        </div>
-        <div class="col-6">
-          <a href="mentoria.html">
-            <img class="img-fluid" src="imagenes/img4.jpg"  alt="Mentoría">
-            <div id="pie" class="texto">
-              <h4 style="padding-left:5%">Mentoría</h4>
-              <p>Haz parte de mentorías individuales o grupales como método de aprendizaje tanto para ti como para alguien que necesite de tu ayuda.
-            </div>
-          </a>
-        </div>
-      </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
 
-      <div class="row">
-        <div class="col-6">
-          <a href="informal.html">
-            <img class="img-fluid" src="imagenes/img3.jpg" alt="Educación informal">
-            <div id="pie" class="texto">
-              <h4 style="padding-left:5%">Tecnología</h4>
-              <p>A tavés de cursos, videos y guías aprende funciones básicas de celulares inteligentes, redes sociales, herramientas de internet, computadores y otros contenidos.</p>
-            </div>
 
-          </a>
-        </div>
-        <div class="col-6">
-          <a href="formal.html">
-            <img class="img-fluid" src="imagenes/img5.jpg"  alt="Educación formal">
-            <div id="pie" class="texto">
-              <h4 style="padding-left:5%">Conocimiento</h4>
-              <p>Encuentra programas educativos que puedes empezar a estudiar, además de información relacionada con algunos temas que pueden ser de tu interés en este momento.  </p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
+  <div id="galeria" class="container" style="margin-top: 40px">
+
+
+
+    <h3>¿Qué busca la iniciativa?</h3>
+    <p>...</p>
+
+    <h3> ¿Qué son las mentorías?</h3>
+    <p>...</p>
+    <h3>¿Intergeneracionalidad?</h3>
+    <p class="text-justify parrafos" style="margin-bottom:0"> ¿Ya habías escuchado esta palabra antes? Si no es así, te hablamos un poco sobre ella. Intergeneracionalidad es un término que hace referencia a las diferentes relaciones que se crean entre personas de distinta generación o con diferencias notorias en la edad. Un ejemplo común lo encontramos en la familia entre abuelo y nieto. Estas relaciones también se pueden establecer por fuera del vínculo familiar entre jóvenes y adultos mayores, de hecho, este espacio está creado para convertirse en el primer paso para conocer a personas con quienes puedas comenzar una relación intergeneracional, compartiendo experiencias, intereses, temas en común o aquello que quieras contar sobre ti. </p>
+    <footer class="blockquote-footer font-italic text-center" >Referencia</footer>
+
+    <h3>¿Por qué cultura y capacitación?</h3>
+    <p>...</p>
+
+
     <div class="jumbotron text-center" style="margin-bottom:0">
       <p>Footer</p>
     </div>
 
-
-  </body>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
 </html>
